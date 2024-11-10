@@ -1,0 +1,128 @@
+ /* Estilos generales de la página*/
+ *{
+    margin: 0%;
+    padding: 0%;
+    gap: 0%;
+ }
+ :root{
+    --color-principal: #ffe800;
+ }
+ /* Estilos barra superior*/
+ .barrasuperior{
+    height: 50px;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+ }
+/* Estilos Llegó Navidad */
+ .llegonavidad{
+    border-radius: 10px;
+    background-color: green;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    width: 9%;
+    align-items: center;
+    justify-content: center;
+ }
+ .llegonavidad:hover{
+   background-color: #00a387; 
+ }
+ /* Barra de Navegación */
+ .barranave{
+    background-color: var(--color-principal);
+    width: 100%;
+    height: 10%;
+    padding: 0;
+ }
+ .contenidogeneral{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding-inline: 26px;
+ }
+ .contenidoizq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+ }
+ .contenidodere{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .imgexito{
+    margin-top: 2%;
+    border-radius: 20px;
+ }
+ .menuhamburguesa{
+    margin-top: 2%;
+    margin-left: 10%;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--color-principal);
+ }
+ .imgmenuham{
+   border-radius: 60px;
+   background-color: var(--color-principal);
+ }
+ .menu{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+ }
+ .busqueda{
+    margin-left: 10%;
+    margin-top: 2%;
+ }
+ .busquedaexi{
+   width: 300%;
+   height: 30px;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 20px;
+ }
+ .iconbuscar{
+   display: flex;
+   align-items: self-end;
+ }
+ .enviopedido{
+   display: flex;
+   align-items: flex-end;
+ }
+ /* Estilos del slider */
+ .slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    display: block;
+}
+/* Contenedor de imágenes que se desplaza */
+.slider-content {
+    display: flex;
+    width: 100%;
+    animation: slide 25s infinite;
+}
+/* Cada imagen ocupa un tercio del contenedor */
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+/* Animación para el cambio de imágenes */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
