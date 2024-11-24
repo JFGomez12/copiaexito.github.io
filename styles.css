@@ -2,10 +2,13 @@
  *{
     margin: 0%;
     padding: 0%;
-    gap: 0%;
- }
+   }
  :root{
     --color-principal: #ffe800;
+ }
+ body{
+   width: auto;
+   height: auto;
  }
  /* Estilos barra superior*/
  .barrasuperior{
@@ -33,65 +36,34 @@
  }
  /* Barra de Navegación */
  .barranave{
-    background-color: var(--color-principal);
-    width: 100%;
-    height: 10%;
-    padding: 0;
- }
- .contenidogeneral{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 10%;
-    padding-inline: 26px;
- }
- .contenidoizq{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 5%;
- }
- .contenidodere{
+   background-color: var(--color-principal);
+   width: 100%;
+   height: 5%;
+   padding: 0;
+}
+.contenidogeneral{
    display: flex;
    align-items: center;
-   justify-content: space-between;
- }
+   justify-content: space-around;
+   width: 100%;
+   height: auto;
+   padding-inline: 26px;
+}
  .imgexito{
-    margin-top: 2%;
     border-radius: 20px;
  }
- .menuhamburguesa{
-    margin-top: 2%;
-    margin-left: 10%;
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: var(--color-principal);
- }
- .imgmenuham{
-   border-radius: 60px;
-   background-color: var(--color-principal);
- }
- .menu{
-    margin-left: 2%;
-    margin-top: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    font-style: inherit;
- }
  .busqueda{
-    margin-left: 10%;
-    margin-top: 2%;
+   display: flex;
+ }
+ .searchprin{
+   border-radius: 5px;
  }
  .busquedaexi{
-   width: 300%;
-   height: 30px;
+   width: 100%;
+   height: 25px;
    border-radius: 10px;
    cursor: pointer;
    font-size: 20px;
- }
- .iconbuscar{
-   display: flex;
-   align-items: self-end;
  }
  .enviopedido{
    display: flex;
@@ -125,4 +97,36 @@
     33% { transform: translateX(-100%); }
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
+}
+.imgcompra1{
+   margin-left: 5%;
+   width: 100%;
+}
+.imgcompra2{
+   margin-left: 5%;
+   width: 100%;
+}
+.promoelectros{
+   margin: 2%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}
+.imgcompra3{
+   margin-left: 5%;
+   width: 100%;
+}
+.imgcompra4{
+   margin-left: 5%;
+   width: 100%;
+}
+.categoriasimg{
+   margin: 2%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}
+.categorias1{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
